@@ -13,7 +13,11 @@ namespace Linq_to_SQL
         protected void Page_Load(object sender, EventArgs e)
         {
             SampleDataContext dbContext = new SampleDataContext();
-           DataGridView  dbContext.Employees;
+            GridView1.DataSource = from Employee in  dbContext.Employees
+                                   where Employee.Gender =="Male"
+                                   orderby Employee.Salary descending
+                                   select Employee;
+            GridView1.DataBind();
         }
     }
 }
