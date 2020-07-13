@@ -18,19 +18,30 @@ namespace Linq_to_SQL
             //                       select Employee;
             GridView1.DataBind();
         }
-
         private void GetData()
         {
             SampleDataContext dbContext = new SampleDataContext();
-            GridView1.DataSource = dbContext.Employees;
-            GridView1.DataBind();
-        }
+            /* if you want to pring sql query on window */
 
+            /// 1st Option
+            //dbContext.Log = Response.Output;
+
+            /// 2nd Option
+            //var linqQuery = from employee in dbContext.Employees select employee;
+            //string sqlQuery = linqQuery.ToString();
+            //Response.Write(sqlQuery);
+
+            /// 3rd Option
+            //var linqQuery = from employee in dbContext.Employees select employee;
+            //Response.Write(dbContext.GetCommand(linqQuery).CommandText);
+
+            //GridView1.DataSource = dbContext.Employees;
+            //GridView1.DataBind();
+        }
         protected void btnGetData_Click(object sender, EventArgs e)
         {
             GetData();
         }
-
         protected void btnInsert_Click(object sender, EventArgs e)
         {
             using (SampleDataContext dbContext = new SampleDataContext())
@@ -50,7 +61,6 @@ namespace Linq_to_SQL
 
             GetData();
         }
-
         protected void btnUpdate_Click(object sender, EventArgs e)
         {
             using (SampleDataContext dbContext = new SampleDataContext())
@@ -63,7 +73,6 @@ namespace Linq_to_SQL
 
             GetData();
         }
-
         protected void btnDelete_Click(object sender, EventArgs e)
         {
             using (SampleDataContext dbContext = new SampleDataContext())
