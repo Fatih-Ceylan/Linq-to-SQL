@@ -88,5 +88,17 @@ namespace Linq_to_SQL
 
             GetData();
         }
+
+        protected void btnGetEmployeesByDepartment_Click(object sender, EventArgs e)
+        {
+            using (SampleDataContext dbContext = new SampleDataContext())
+            {
+                string deptName = string.Empty;
+                GridView1.DataSource = dbContext.GetEmployeesByDepartment(1, ref deptName);
+                GridView1.DataBind();
+
+                lblDept.Text = "Department Name = " + deptName;
+            }
+        }
     }
 }

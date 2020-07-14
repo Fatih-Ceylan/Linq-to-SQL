@@ -33,6 +33,15 @@ namespace Linq_to_SQL
         protected global::System.Web.UI.WebControls.GridView GridView1;
 
         /// <summary>
+        /// lblDept control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblDept;
+
+        /// <summary>
         /// btnGetData control.
         /// </summary>
         /// <remarks>
@@ -67,5 +76,14 @@ namespace Linq_to_SQL
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnDelete;
+
+        /// <summary>
+        /// btnGetEmployeesByDepartment control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnGetEmployeesByDepartment;
     }
 }
