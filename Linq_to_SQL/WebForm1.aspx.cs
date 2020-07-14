@@ -81,7 +81,7 @@ namespace Linq_to_SQL
             using (SampleDataContext dbContext = new SampleDataContext())
             {
                 // insert any desired ID exist on database
-                Employee employee = dbContext.Employees.SingleOrDefault(x => x.ID == 1004);
+                Employee employee = dbContext.Employees.SingleOrDefault(x => x.ID == 1003);
                 dbContext.Employees.DeleteOnSubmit(employee);
                 dbContext.SubmitChanges();
             }
