@@ -9,7 +9,7 @@
     </Type>
   </Table>
   <Table Name="dbo.Employees" Member="Employees">
-    <Type Name="Employee">
+    <Type Name="Employee" Id="ID1">
       <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="FirstName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Column Name="LastName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
@@ -19,4 +19,7 @@
       <Association Name="Department_Employee" Member="Department" ThisKey="DepartmentId" OtherKey="ID" Type="Department" IsForeignKey="true" />
     </Type>
   </Table>
+  <Function Name="dbo.GetEmployees" Method="GetEmployees">
+    <ElementType IdRef="ID1" />
+  </Function>
 </Database>

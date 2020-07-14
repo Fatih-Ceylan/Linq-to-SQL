@@ -37,6 +37,9 @@ namespace Linq_to_SQL
 
             //GridView1.DataSource = dbContext.Employees;
             //GridView1.DataBind();
+
+            GridView1.DataSource = dbContext.GetEmployees();
+            GridView1.DataBind();
         }
         protected void btnGetData_Click(object sender, EventArgs e)
         {

@@ -83,6 +83,13 @@ namespace Linq_to_SQL
 				return this.GetTable<Employee>();
 			}
 		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.GetEmployees")]
+		public ISingleResult<Employee> GetEmployees()
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
+			return ((ISingleResult<Employee>)(result.ReturnValue));
+		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Departments")]
