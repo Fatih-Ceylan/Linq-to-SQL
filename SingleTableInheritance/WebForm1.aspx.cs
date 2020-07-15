@@ -64,5 +64,31 @@ namespace SingleTableInheritance
                     break;
             }
         }
+  
+        protected void btnAddEmployees_Click(object sender, EventArgs e)
+        {
+            // try to convert this into  form application
+            using (Sample2DataContext dbContext = new Sample2DataContext())
+            {
+                PermanentEmployee permanentEmployee = new PermanentEmployee
+                {
+                    Name = "Ahmet",
+                    Gender = "Male",
+                    AnnualSalary = 2320
+                };
+
+                ContractEmployee contractEmployee = new ContractEmployee
+                {
+                    Name = "Ayşe",
+                    Gender = "Female",
+                    HourlyPay = 20,
+                    HoursWorked = 45
+                };
+
+                dbContext.Employees.InsertOnSubmit(permanentEmployee);
+                dbContext.Employees.InsertOnSubmit(contractEmployee);
+                dbContext.SubmitChanges();
+            }
+        }
     }
 }
