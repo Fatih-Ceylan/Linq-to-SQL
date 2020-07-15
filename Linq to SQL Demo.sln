@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LazyLoadConsoleDemo", "Cons
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LazyLoadWebAppDemo", "LazyLoadWebAppDemo\LazyLoadWebAppDemo.csproj", "{3E4FF21E-0365-4300-849B-7542CEAE9C0E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingleTableInheritance", "SingleTableInheritance\SingleTableInheritance.csproj", "{11BE4F1B-AD90-4D21-9595-E8E84A8D3BE1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{3E4FF21E-0365-4300-849B-7542CEAE9C0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E4FF21E-0365-4300-849B-7542CEAE9C0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E4FF21E-0365-4300-849B-7542CEAE9C0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11BE4F1B-AD90-4D21-9595-E8E84A8D3BE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11BE4F1B-AD90-4D21-9595-E8E84A8D3BE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11BE4F1B-AD90-4D21-9595-E8E84A8D3BE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11BE4F1B-AD90-4D21-9595-E8E84A8D3BE1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
