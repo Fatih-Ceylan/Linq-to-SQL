@@ -1,0 +1,7 @@
+C:\Users\feti\Documents\GitHub\Linq to SQL Demo\ConsoleDemo\bin\Debug\ConsoleDemo.exe.config
+C:\Users\feti\Documents\GitHub\Linq to SQL Demo\ConsoleDemo\bin\Debug\ConsoleDemo.exe
+C:\Users\feti\Documents\GitHub\Linq to SQL Demo\ConsoleDemo\bin\Debug\ConsoleDemo.pdb
+C:\Users\feti\Documents\GitHub\Linq to SQL Demo\ConsoleDemo\obj\Debug\ConsoleDemo.csprojAssemblyReference.cache
+C:\Users\feti\Documents\GitHub\Linq to SQL Demo\ConsoleDemo\obj\Debug\ConsoleDemo.csproj.CoreCompileInputs.cache
+C:\Users\feti\Documents\GitHub\Linq to SQL Demo\ConsoleDemo\obj\Debug\ConsoleDemo.exe
+C:\Users\feti\Documents\GitHub\Linq to SQL Demo\ConsoleDemo\obj\Debug\ConsoleDemo.pdb
