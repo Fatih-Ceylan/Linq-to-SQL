@@ -6,6 +6,7 @@ namespace LazyLoadConsoleDemo
     {
         static void Main(string[] args)
         {
+            // to see in console
             using (SampleDataContext dbContext = new SampleDataContext())
             {
                 dbContext.Log = Console.Out;
