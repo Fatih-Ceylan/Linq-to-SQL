@@ -12,11 +12,14 @@ namespace Linq_to_SQL
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //GridView1.DataSource = from Employee in  dbContext.Employees
-            //                       where Employee.Gender =="Male"
+            /* To get specific data with sql query from database  */
+
+            //SampleDataContext dbContext = new SampleDataContext();
+            //GridView1.DataSource = from Employee in dbContext.Employees
+            //                       where Employee.Gender == "Male"
             //                       orderby Employee.Salary descending
             //                       select Employee;
-            GridView1.DataBind();
+            //GridView1.DataBind();
         }
         private void GetData()
         {

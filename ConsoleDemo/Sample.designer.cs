@@ -9,7 +9,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ConsoleDemo
+namespace LazyLoadConsoleDemo
 {
 	using System.Data.Linq;
 	using System.Data.Linq.Mapping;
@@ -39,7 +39,7 @@ namespace ConsoleDemo
     #endregion
 		
 		public SampleDataContext() : 
-				base(global::ConsoleDemo.Properties.Settings.Default.SampleConnectionString, mappingSource)
+				base(global::LazyLoadConsoleDemo.Properties.Settings.Default.SampleConnectionString, mappingSource)
 		{
 			OnCreated();
 		}
