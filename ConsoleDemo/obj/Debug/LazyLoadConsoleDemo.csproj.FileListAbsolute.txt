@@ -1,0 +1,6 @@
+C:\Users\feti\Documents\GitHub\Linq to SQL Demo\ConsoleDemo\obj\Debug\LazyLoadConsoleDemo.csproj.CoreCompileInputs.cache
+C:\Users\feti\Documents\GitHub\Linq to SQL Demo\ConsoleDemo\bin\Debug\LazyLoadConsoleDemo.exe.config
+C:\Users\feti\Documents\GitHub\Linq to SQL Demo\ConsoleDemo\bin\Debug\LazyLoadConsoleDemo.exe
+C:\Users\feti\Documents\GitHub\Linq to SQL Demo\ConsoleDemo\bin\Debug\LazyLoadConsoleDemo.pdb
+C:\Users\feti\Documents\GitHub\Linq to SQL Demo\ConsoleDemo\obj\Debug\LazyLoadConsoleDemo.exe
+C:\Users\feti\Documents\GitHub\Linq to SQL Demo\ConsoleDemo\obj\Debug\LazyLoadConsoleDemo.pdb

@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linq_to_SQL", "Linq_to_SQL\Linq_to_SQL.csproj", "{4E52CE7D-ABCC-4918-BF18-B3E2F7438A42}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleDemo", "ConsoleDemo\ConsoleDemo.csproj", "{92141521-603D-4CE7-8E79-BC338DC17512}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LazyLoadConsoleDemo", "ConsoleDemo\LazyLoadConsoleDemo.csproj", "{92141521-603D-4CE7-8E79-BC338DC17512}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

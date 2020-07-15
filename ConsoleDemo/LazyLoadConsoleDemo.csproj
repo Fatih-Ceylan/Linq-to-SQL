@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{92141521-603D-4CE7-8E79-BC338DC17512}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ConsoleDemo</RootNamespace>
-    <AssemblyName>ConsoleDemo</AssemblyName>
+    <RootNamespace>LazyLoadConsoleDemo</RootNamespace>
+    <AssemblyName>LazyLoadConsoleDemo</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -31,6 +31,9 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
