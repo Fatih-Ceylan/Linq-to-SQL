@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Sample2" Class="Sample2DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Sample2;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="Sample2ConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Employees" Member="Employees">
+    <Type Name="Employee" Modifier="Abstract">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Gender" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Discriminator" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" IsDiscriminator="true" />
+      <Type Name="PermanentEmployee" InheritanceCode="PermanentEmployee" IsInheritanceDefault="true">
+        <Column Name="AnnualSalary" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      </Type>
+      <Type Name="ContractEmployee" InheritanceCode="ContractEmployee">
+        <Column Name="HourlyPay" Type="System.Int32" DbType="Int" CanBeNull="true" />
+        <Column Name="HoursWorked" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      </Type>
+    </Type>
+  </Table>
+</Database>
