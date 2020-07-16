@@ -1,0 +1,7 @@
+C:\Users\feti\Documents\GitHub\Linq to SQL Demo\StudentDemo\bin\Debug\StudentDemo.exe.config
+C:\Users\feti\Documents\GitHub\Linq to SQL Demo\StudentDemo\bin\Debug\StudentDemo.exe
+C:\Users\feti\Documents\GitHub\Linq to SQL Demo\StudentDemo\bin\Debug\StudentDemo.pdb
+C:\Users\feti\Documents\GitHub\Linq to SQL Demo\StudentDemo\obj\Debug\StudentDemo.csprojAssemblyReference.cache
+C:\Users\feti\Documents\GitHub\Linq to SQL Demo\StudentDemo\obj\Debug\StudentDemo.csproj.CoreCompileInputs.cache
+C:\Users\feti\Documents\GitHub\Linq to SQL Demo\StudentDemo\obj\Debug\StudentDemo.exe
+C:\Users\feti\Documents\GitHub\Linq to SQL Demo\StudentDemo\obj\Debug\StudentDemo.pdb
