@@ -25,6 +25,8 @@ namespace ConcurrencyDemo
 
                 account.AccountBalance = account.AccountBalance + 500;
                 db.SubmitChanges();
+
+                GetAccountsData();
             }
 
         }
