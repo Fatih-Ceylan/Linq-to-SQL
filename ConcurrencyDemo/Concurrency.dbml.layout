@@ -1,1 +1,12 @@
-﻿
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Concurrency">
+  <DataContextMoniker Name="/ConcurrencyDataContext" />
+  <nestedChildShapes>
+    <classShape Id="147f1101-1d3f-4243-9fcc-4bd66465731d" absoluteBounds="3.625, 2, 2, 1.3862939453125">
+      <DataClassMoniker Name="/ConcurrencyDataContext/Account" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4a4e9d03-3804-48fb-b88e-d14933a93c8c" absoluteBounds="3.64, 2.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
