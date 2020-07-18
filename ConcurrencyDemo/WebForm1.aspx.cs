@@ -30,7 +30,20 @@ namespace ConcurrencyDemo
                 catch (ChangeConflictException)
                 {
 
-                    db.ChangeConflicts.ResolveAll(RefreshMode.KeepCurrentValues);
+                    db.ChangeConflicts.ResolveAll(RefreshMode.OverwriteCurrentValues);
+
+                    foreach (ObjectChangeConflict objectChangeConflict in db.ChangeConflicts)
+                    {
+                        foreach (MemberChangeConflict memberChangeConflict in objectChangeConflict.MemberConflicts)
+                        {
+                            Response.Write("Current Value = " + memberChangeConflict.CurrentValue.ToString() + "<br/>");
+                            Response.Write("Original Value = " + memberChangeConflict.OriginalValue.ToString() + "<br/>");
+                            Response.Write("Database Value = " + memberChangeConflict.DatabaseValue.ToString() + "<br/>");
+                        }
+                    }
+
+                    db.SubmitChanges();
+                    GetAccountsData();
                 }
             }
 
@@ -43,7 +56,7 @@ namespace ConcurrencyDemo
                 Account account = db.Accounts.FirstOrDefault(x => x.AccountNumber == 1);
 
                 lblAccountNumber.Text = account.AccountNumber.ToString();
-                lblAccountName.Text = account.AccountNumber.ToString();
+                lblAccountName.Text = account.AccountName.ToString();
                 lblAccountBalance.Text = account.AccountBalance.ToString();
             }
         }
