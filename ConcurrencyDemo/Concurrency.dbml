@@ -5,6 +5,7 @@
       <Column Name="AccountNumber" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="AccountName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Column Name="AccountBalance" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="version" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
     </Type>
   </Table>
 </Database>

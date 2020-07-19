@@ -2,10 +2,10 @@
 <ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Concurrency">
   <DataContextMoniker Name="/ConcurrencyDataContext" />
   <nestedChildShapes>
-    <classShape Id="147f1101-1d3f-4243-9fcc-4bd66465731d" absoluteBounds="3.625, 2, 2, 1.3862939453125">
+    <classShape Id="89f12522-3443-4eb0-96a8-79e9b99ee10b" absoluteBounds="2.25, 1.75, 2, 1.5785953776041666">
       <DataClassMoniker Name="/ConcurrencyDataContext/Account" />
       <nestedChildShapes>
-        <elementListCompartment Id="4a4e9d03-3804-48fb-b88e-d14933a93c8c" absoluteBounds="3.64, 2.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="47cbcaa2-356b-492d-8e8e-30de019404ce" absoluteBounds="2.265, 2.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
   </nestedChildShapes>

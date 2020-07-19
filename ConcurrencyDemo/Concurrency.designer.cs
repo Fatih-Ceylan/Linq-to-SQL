@@ -86,6 +86,8 @@ namespace ConcurrencyDemo
 		
 		private System.Nullable<int> _AccountBalance;
 		
+		private System.Data.Linq.Binary _version;
+		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -96,6 +98,8 @@ namespace ConcurrencyDemo
     partial void OnAccountNameChanged();
     partial void OnAccountBalanceChanging(System.Nullable<int> value);
     partial void OnAccountBalanceChanged();
+    partial void OnversionChanging(System.Data.Linq.Binary value);
+    partial void OnversionChanged();
     #endregion
 		
 		public Account()
@@ -103,7 +107,7 @@ namespace ConcurrencyDemo
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_AccountNumber", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_AccountNumber", DbType="Int NOT NULL", IsPrimaryKey=true, UpdateCheck=UpdateCheck.Never)]
 		public int AccountNumber
 		{
 			get
@@ -123,7 +127,7 @@ namespace ConcurrencyDemo
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_AccountName", DbType="NVarChar(50)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_AccountName", DbType="NVarChar(50)", UpdateCheck=UpdateCheck.Never)]
 		public string AccountName
 		{
 			get
@@ -143,7 +147,7 @@ namespace ConcurrencyDemo
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_AccountBalance", DbType="Int")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_AccountBalance", DbType="Int", UpdateCheck=UpdateCheck.Never)]
 		public System.Nullable<int> AccountBalance
 		{
 			get
@@ -159,6 +163,26 @@ namespace ConcurrencyDemo
 					this._AccountBalance = value;
 					this.SendPropertyChanged("AccountBalance");
 					this.OnAccountBalanceChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_version", AutoSync=AutoSync.Always, DbType="rowversion NOT NULL", CanBeNull=false, IsDbGenerated=true, IsVersion=true, UpdateCheck=UpdateCheck.Never)]
+		public System.Data.Linq.Binary version
+		{
+			get
+			{
+				return this._version;
+			}
+			set
+			{
+				if ((this._version != value))
+				{
+					this.OnversionChanging(value);
+					this.SendPropertyChanging();
+					this._version = value;
+					this.SendPropertyChanged("version");
+					this.OnversionChanged();
 				}
 			}
 		}
