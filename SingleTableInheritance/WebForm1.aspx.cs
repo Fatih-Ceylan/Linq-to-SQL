@@ -64,7 +64,7 @@ namespace SingleTableInheritance
                     break;
             }
         }
-  
+
         protected void btnAddEmployees_Click(object sender, EventArgs e)
         {
             // try to convert this into  form application
