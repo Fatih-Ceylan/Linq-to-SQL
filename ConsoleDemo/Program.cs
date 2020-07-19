@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Data.Linq;
-
 namespace LazyLoadConsoleDemo
 {
     class Program

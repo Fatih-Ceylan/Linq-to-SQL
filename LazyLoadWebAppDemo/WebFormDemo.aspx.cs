@@ -1,5 +1,4 @@
 ﻿using System;
-
 namespace LazyLoadWebAppDemo
 {
     public partial class WebFormDemo : System.Web.UI.Page
@@ -10,7 +9,6 @@ namespace LazyLoadWebAppDemo
             {
                 // Log the sql query
                 dbContext.Log = Response.Output;
-
                 GridView1.DataSource = dbContext.Departments;
                 GridView1.DataBind();
             }
