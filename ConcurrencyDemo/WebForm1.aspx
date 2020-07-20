@@ -9,7 +9,6 @@
 </head>
 
 <body>
-
     <form id="form1" runat="server">
         <div style="font-family: Arial">
             <table border="1">
@@ -43,6 +42,5 @@
                 OnClick="btnDeposit_Click" />
         </div>
     </form>
-
 </body>
 </html>
