@@ -11,6 +11,8 @@ namespace LazyLoadWebAppDemo
                 dbContext.Log = Response.Output;
                 GridView1.DataSource = dbContext.Departments;
                 GridView1.DataBind();
+
+               // to store contents on the table
             }
         }
     }
