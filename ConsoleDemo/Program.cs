@@ -1,5 +1,6 @@
 ﻿using System;
 namespace LazyLoadConsoleDemo
+
 {
     class Program
     {
