@@ -24,6 +24,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		StoreProcedures(insert,update,delete).sql = StoreProcedures(insert,update,delete).sql
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{0962086B-0732-4F2F-AC5A-441A13E2AA48}"
+	ProjectSection(SolutionItems) = preProject
+		Database\Sample.ldf = Database\Sample.ldf
+		Database\Sample.mdf = Database\Sample.mdf
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +63,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0962086B-0732-4F2F-AC5A-441A13E2AA48} = {2873D7F1-8F05-40C0-8A1E-5EE68364AC4E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {146BE7C2-2153-4470-AF12-926FD879BB41}
